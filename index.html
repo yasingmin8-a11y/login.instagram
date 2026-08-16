@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instaggram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background: white;
+      width: 350px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #ccc;
+      text-align: center;
+    }
+
+    .warning {
+      background: #fff3cd;
+      padding: 12px;
+      border-radius: 8px;
+      color: #856404;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #hasil {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Instagram Login</h2>
+
+  <div class="warning">
+    Login ke Instagram
+  </div>
+
+  <form id="formInstagram">
+    <input type="text" placeholder="Nomor ponsel,Nama pengguna, atau email">
+    <input type="password" placeholder="Kata sandi">
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="hasil"></div>
+</div>
+<script>
+document.getElementById("formInstaggram").addEventListener("submit", function(e) {});
+
+  document.getElementById("hasil").innerHTML =
+    "<br><br>" +
+    "masukkan Username atau password " +
+    "Lupa kata sandi.";
+
+  this.reset();
+});
+</script>
+
+</body>
+</html>
